@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + Bootstrap + Luxon</title>
+  <script type="module" crossorigin src="/assets/index-2e8qspXw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-gDUD55ST.css">
+</head>
+<body>
+    <div class="container-fluid min-vh-100 d-flex align-items-center">
+        <div class="row w-100">
+            <div class="col-2"></div>
+            <div class="col-8 d-flex">
+                <button id="showTimeBtn" 
+                        type="button" 
+                        class="btn btn-danger btn-lg w-100 flex-fill"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#timeModal"
+                        style="font-size: 2rem;">
+                    Показать время
+                </button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="timeModal" tabindex="-1" aria-labelledby="timeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="timeModalLabel">Дарья Пугина</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body text-center fs-3">
+                    <span id="currentDateTime">--.--.---- --:--:--</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
